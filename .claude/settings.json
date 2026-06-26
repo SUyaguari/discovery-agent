@@ -6,11 +6,11 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/readiness-gate.py\""
+            "command": "py \"$CLAUDE_PROJECT_DIR/.claude/hooks/readiness-gate.py\""
           },
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/hypothesis-gate.py\""
+            "command": "py \"$CLAUDE_PROJECT_DIR/.claude/hooks/hypothesis-gate.py\""
           }
         ]
       }

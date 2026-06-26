@@ -148,3 +148,30 @@ trazados, seis user stories, cinco hipótesis falsables y un dashboard HTML gene
 
 ---
 
+## Evidencia de la demo del gate
+
+**Pasos seguidos para la demostración:**
+
+1. Eliminar una entrevista de persona referenciada de primera mano que necesitaba respaldo de entrevista. Para el ejemplo se eliminó representante de familia.
+2. Ejecutar el comando /discovery:analyze.
+3. Una vez generado los archivos del comando anterior, ejecuté el comando /discovery:generate-mvp.
+4. El hook readiness-gate.py bloquea la generación del mvp-canvas debido a la falta de evidencia.
+5. Se añadió nuevamente la entrevista borrada.
+6. Ejecutar el comando /discovery:analyze.
+7. Pasó el hook readiness-gate.py debido a que contaba con la evidencia suficiente.
+
+---
+
+## Reflexion Breve
+
+La práctica del Discovery agent sin duda ahorra un montón de tiempo en el análisis de nuevos requerimientos y proceso ya que nos ayuda a analizar y ver el problema desde otro punto de vista.
+
+Al inicio, mientras conversaba sobre el problema presentado en la inscripción de niños y niñas del Oratorio Vacacional, suponía que iba a ser una simple página de registro, un formulario en un sitio web, conectado a una base de datos limitado a la captura de datos básicos.
+
+Pero al levantar y revisar la información del proceso y en conjunto con el agente, entendí que el problema es enorme, no es solo “digitalizar la inscripción remplazando el Google Forms” sino buscar soluciones para todo el flujo posterior a la inscripción: validar datos, organizar grupos por edades, revisar estados de pagos, verificar números de celular, comunicarse con los representantes, etc. Por ejemplo, las inscripciones antes se trabajaban con siete – ocho formularios simultáneamente, es decir el trabajo de comprobación y el nivel o riesgo de errores era altísimo ya que se trabajaba con 50 a 80 registros por formulario y la comprobación manual se volvía un problema.
+
+Por eso, mi supuesto que era “Digitalizar la inscripción” cambio a mejorar la trazabilidad y organización del proceso de inscripción, el Discovery agent ayudo a evidenciar que el MVP no debía centrarse únicamente en el formulario, sino en el registro, organización, validación y consulta de información para acaparar todo el trabajo manual de la coordinación del Oratorio y se puede evidenciar en el archivo de la práctica.
+
+Lo más complicado de cumplir la regla de “cero invenciones” desde mi punto de vista es buscar soluciones rápidas sin entender el problema, por ejemplo, hay partes del proceso que parecen obvias y se termina añadiendo requerimientos o funcionalidades que no se piden, por ejemplo, un reporte, una pasarela de pagos, etc. Sin embargo, el Discovery agent verifica cada uno de los requisitos y si no están respaldadas en las entrevistas, no se le toma en cuenta, es decir si no se identificaba el dolor real en las entrevistas pasan a ser meras ideas o suposiciones.
+
+La gobernanza ejecutable son las reglas del agente que sirven como un control que, si o si debe cumplir. En la práctica cumplió su rol restringiendo la generación de artefactos libremente, no inventando información, manteniendo la trazabilidad con evidencia, validando que los roles o personas principales tengan entrevistas, bloqueando hipótesis que no sea falsables, es decir que los archivos donde definimos las reglas, comandos, hooks, ayudan a controlar el proceso ante falta de evidencia o hipótesis vagas o no medibles. Por eso al utilizar la IA para generar y procesar documentos más rápido la gobernanza ejecutable nos permite controlar y permitiendo que el trabajo generado por la IA sea más confiable debido a que cada output del agente está alineado a reglas predefinidas.

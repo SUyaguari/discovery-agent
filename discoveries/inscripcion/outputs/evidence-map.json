@@ -1,0 +1,111 @@
+{
+  "personas": [
+    {
+      "name": "R. (receptor de inscripciones)",
+      "role": "Receptor",
+      "primary": true
+    },
+    {
+      "name": "C. (coordinador del oratorio vacacional)",
+      "role": "Coordinador",
+      "primary": true
+    },
+    {
+      "name": "T. (tesorera del oratorio vacacional)",
+      "role": "Tesorera",
+      "primary": true
+    },
+    {
+      "name": "Representante / Padre de familia",
+      "role": "Representante",
+      "primary": true
+    }
+  ],
+  "pains": [
+    {
+      "id": "multiples-formularios-edad",
+      "source": "receptor-inscripciones.md",
+      "persona": "R. (receptor de inscripciones)"
+    },
+    {
+      "id": "formulario-incorrecto",
+      "source": "receptor-inscripciones.md",
+      "persona": "R. (receptor de inscripciones)"
+    },
+    {
+      "id": "datos-repetidos-representante",
+      "source": "receptor-inscripciones.md",
+      "persona": "R. (receptor de inscripciones)"
+    },
+    {
+      "id": "carga-cedula-lenta",
+      "source": "receptor-inscripciones.md",
+      "persona": "R. (receptor de inscripciones)"
+    },
+    {
+      "id": "proceso-desordenado-alta-demanda",
+      "source": "receptor-inscripciones.md",
+      "persona": "R. (receptor de inscripciones)"
+    },
+    {
+      "id": "clasificacion-manual-edad",
+      "source": "coordinador-oratorio.md",
+      "persona": "C. (coordinador del oratorio vacacional)"
+    },
+    {
+      "id": "envio-link-incorrecto-whatsapp",
+      "source": "coordinador-oratorio.md",
+      "persona": "C. (coordinador del oratorio vacacional)"
+    },
+    {
+      "id": "coordinacion-manual-grupos",
+      "source": "coordinador-oratorio.md",
+      "persona": "C. (coordinador del oratorio vacacional)"
+    },
+    {
+      "id": "falta-visibilidad-estado",
+      "source": "coordinador-oratorio.md",
+      "persona": "C. (coordinador del oratorio vacacional)"
+    },
+    {
+      "id": "dependencia-estado-pago-enlace",
+      "source": "coordinador-oratorio.md",
+      "persona": "C. (coordinador del oratorio vacacional)"
+    },
+    {
+      "id": "estados-pago-poco-claros",
+      "source": "tesorera-oratorio.md",
+      "persona": "T. (tesorera del oratorio vacacional)"
+    },
+    {
+      "id": "confusion-pago-verificado",
+      "source": "tesorera-oratorio.md",
+      "persona": "T. (tesorera del oratorio vacacional)"
+    },
+    {
+      "id": "falta-comprobante-inscripcion",
+      "source": "tesorera-oratorio.md",
+      "persona": "T. (tesorera del oratorio vacacional)"
+    },
+    {
+      "id": "verificacion-manual-comprobantes",
+      "source": "tesorera-oratorio.md",
+      "persona": "T. (tesorera del oratorio vacacional)"
+    },
+    {
+      "id": "confusion-formulario-rango-edad",
+      "source": "representante-familia.md",
+      "persona": "Representante / Padre de familia"
+    },
+    {
+      "id": "incertidumbre-estado-pago",
+      "source": "representante-familia.md",
+      "persona": "Representante / Padre de familia"
+    },
+    {
+      "id": "falta-confirmacion-inscripcion",
+      "source": "representante-familia.md",
+      "persona": "Representante / Padre de familia"
+    }
+  ]
+}
